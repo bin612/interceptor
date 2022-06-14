@@ -58,7 +58,7 @@ public class AuthInterceptor implements HandlerInterceptor {
         //annotation check
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         if(null != handlerMethod.getMethodAnnotation(clazz) || null != handlerMethod.getBeanType().getAnnotation(clazz)) {
-           //Auth annotation 이 있을땨ㅐ는 true
+           //Auth annotation 이 있을때는 true
             return true;
         }
 
